@@ -4,3 +4,8 @@ System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.facebook.com/");
+		driver.findElement(By.name("q")).click();
+		List<WebElement> allsuggest = driver.findElements(By.xpath("//li[@class='sbct'and not(@id='YMXe')]"));
+		  for(WebElement ele:allsuggest) {
+		    	System.out.println(ele.getText());
+		    }
