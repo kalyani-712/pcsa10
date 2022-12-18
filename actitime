@@ -9,3 +9,4 @@ System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		  for(WebElement ele:allsuggest) {
 		    	System.out.println(ele.getText());
 		    }
+		    }
