@@ -1,3 +1,5 @@
+
+public class Webdriver
 System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -8,5 +10,6 @@ System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		List<WebElement> allsuggest = driver.findElements(By.xpath("//li[@class='sbct'and not(@id='YMXe')]"));
 		  for(WebElement ele:allsuggest) {
 		    	System.out.println(ele.getText());
+			
 		    }
 		    }
